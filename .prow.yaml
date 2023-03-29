@@ -1,0 +1,11 @@
+presubmits:
+  - name: presubmit-tesing_ground
+    decorate: true
+    always_run: true
+    spec:
+      containers:
+      - image: alpine
+        command:
+        - /bin/ls
+        args:
+        - -ll
